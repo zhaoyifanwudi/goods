@@ -1,0 +1,117 @@
+.container{
+    position: relative;
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+a{
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+input{
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:before,.clearfix:after{
+    content: '';
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+//logo
+// .header-logo{
+//     display: inline-block;
+//     height: 55px;
+//     width: 55px;
+//     // background-color:#FF6600;
+//     a{
+//         display: inline-block;
+//         /* 两张图片 */
+//         width: 55px;
+//         height: 55px;
+//         &:before{
+//             /* 伪类必须要有content */
+//             content:' ';
+//             // @include bgImg(55px,55px,'/imgs/mi-logo.png',55px);
+//             display: block;
+//             width: 55px;
+//             height: 55px;
+//             background: url('/imgs/footer-logo.png') no-repeat center;
+//             background-size:55px;
+//             transition: all .2s;
+//         }
+//         &:after{
+//             content:' ';
+//             // @include bgImg(55px,55px,'/imgs/mi-home.png',55px);
+//             display: none;
+//             width: 55px;
+//             height: 55px;
+//             background: url('/imgs/icon-search.png') no-repeat center;
+//             background-size:55px;
+//             transition: all .2s;
+//         }
+//         &:hover:before{
+//             // margin-left: -55px;
+//             transition: all .2s;
+//             display: none;
+//         }
+//         &:hover:after{
+//             // margin-left: -55px;
+//             transition: all .2s;
+//             display: block;
+//         }
+//     }
+//   }
+.header-logo{
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    overflow: hidden;
+    // background-color:#FF6600;
+    a{
+        display: inline-block;
+        /* 两张图片 */
+        width: 110px;
+        height: 55px;
+        transition: margin .2s;
+        
+        
+        .icon-imgl{
+            
+            // @include bgImg(55px,55px,'/imgs/mi-logo.png',55px);
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            
+            background: url('/imgs/footer-logo.png') no-repeat center;
+            background-size:55px;
+            
+        }
+        .icon-imgr{
+            
+            // @include bgImg(55px,55px,'/imgs/mi-home.png',55px);
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            background: url('/imgs/loag.jpg') no-repeat center;
+            background-size:55px;
+            
+            
+        }
+        &:hover{
+            margin-left: -55px;
+            transition: margin .2s;
+            
+        }
+    }
+  }
